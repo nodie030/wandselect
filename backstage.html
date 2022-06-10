@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/backstage.css">
+    <link rel="icon" href="assets/img/wand.png">
+    <title>奧利凡德</title>
+</head>
+<body class="index_body">
+   <!--導覽列-->
+   <script src="assets/js/hearder.js"></script>
+
+   <section>
+    <div class="back_title">          
+      <p class="title_word">後台管理</p>
+    </div>
+
+      <span id="tab-1" class="none">1</span>
+      <span id="tab-2" class="none">2</span>
+
+      <div id="tab"> 
+      <!--頁籤按鈕-->
+      <ul>
+        <li><a href="#tab-1">商品管理</a></li>
+        <li><a href="#tab-2">訂單瀏覽</a></li>
+      </ul>
+
+      <!--頁籤內容第一頁-->
+       <div class="tab-content-1">
+         <div class="back_add">
+          <p class="smallword">商品新增</p>
+             <form method="post" action="">
+                <input type="text" name="" placeholder="商品名稱" class="input"/>
+                <input type="text" name="" placeholder="商品金額" class="input1"/>
+                <textarea name="" cols="60" rows="2" wrap="hard" placeholder="商品描述" class="input2"></textarea>
+                <input type="text" name="" placeholder="商品數量" class="input1"/>
+                <input type="text" name="" placeholder="商品圖片" class="input1"/>
+                <input type="submit" name="" value="儲存" class="button"/>
+             </form>
+         </div> 
+
+         <div class="back_revise">
+          <p class="smallword">商品修改</p>
+           <form method="post" action="">
+              <input type="text" name="" placeholder="商品名稱" class="input"/>
+              <input type="text" name="" placeholder="商品金額" class="input1"/>
+              <textarea name="" cols="60" rows="2" wrap="hard" placeholder="商品描述" class="input2"></textarea>
+              <input type="text" name="" placeholder="商品數量" class="input1"/>
+              <input type="text" name="" placeholder="商品圖片" class="input1"/>
+              <input type="submit" name="" value="儲存" class="button"/>
+           </form>
+         </div>
+
+         <div class="back_delet">
+          <p class="smallword">商品刪除</p>
+           <form method="post" action="">
+              <input type="text" name="" placeholder="商品名稱" class="input"/>
+              <input type="text" name="" placeholder="商品金額" class="input1"/>
+              <textarea name="" cols="60" rows="2" wrap="hard" placeholder="商品描述" class="input2"></textarea>
+              <input type="text" name="" placeholder="商品數量" class="input1"/>
+              <input type="text" name="" placeholder="商品圖片" class="input1"/>
+              <input type="submit" name="" value="儲存" class="button"/>
+           </form>
+         </div>
+
+         <div class="backToIndex">
+          <form method="post" action="index.html" class="button_locat">
+              <input type="submit" name="" value="回到首頁" class="button1"/>
+          </form>
+         </div>
+
+       </div>
+
+
+       <!--頁籤內容第二頁-->
+       <div class="tab-content-2">
+         <div class="order">
+           <span class="smallword">訂單編號：</span> <span class="word">00001</span><br>
+           <span class="smallword">收件名稱：</span> <span class="word">xxx</span><br>
+           <span class="smallword">電話：</span>     <span class="word">0900111222</span><br>
+           <span class="smallword">地址：</span>     <span class="word">霍格華茲?</span><br>
+           <span class="smallword">訂單金額：</span> <span class="word">777</span><br>
+           <hr class="line"><br>
+
+           <span class="smallword">訂單編號：</span> <span class="word">00002</span><br>
+           <span class="smallword">收件名稱：</span> <span class="word">yyy</span><br>
+           <span class="smallword">電話：</span>     <span class="word">0900222333</span><br>
+           <span class="smallword">地址：</span>     <span class="word">魔法部?</span><br>
+           <span class="smallword">訂單金額：</span> <span class="word">666</span><br>
+           <hr class="line"><br>
+
+           <span class="smallword">訂單編號：</span> <span class="word">00003</span><br>
+           <span class="smallword">收件名稱：</span> <span class="word">zzz</span><br>
+           <span class="smallword">電話：</span>     <span class="word">0900333444</span><br>
+           <span class="smallword">地址：</span>     <span class="word">斜角巷?</span><br>
+           <span class="smallword">訂單金額：</span> <span class="word">676</span><br>
+
+           <div class="backToIndex">
+            <form method="post" action="index.html" class="button_locat1">
+                <input type="submit" name="" value="回到首頁" class="button1"/>
+            </form>
+
+         </div>  
+       </div>
+      </div>
+   </section>
+</body>
+</html>

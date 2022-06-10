@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/introduce.css">
+    <link rel="icon" href="assets/img/wand.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+</head>
+    <title>奧利凡德</title>
+</head>
+<script>
+    var btn=document.getElementById("num");
+    function minusNUM(){
+        var btn=document.getElementById("num");
+        btn-=1;
+        // alert(btn.innerHTML);
+        btn.innerHTML=btn;
+    }
+    function addNUM(){
+        var btn=document.getElementById("num");
+        btn+=1;
+        // alert(btn.innerHTML);
+        btn.innerHTML=btn;
+    }
+</script>
+<body>
+    <script src="assets/js/hearder.js"></script>
+    <section><!--商品介紹區-->
+        <div class="back"><input type ="button" onclick="history.back()" value="回到上一頁" id="back"></input></div>
+        <div id="item1" class="item item--mod"> <img src="assets/img/w13.jpg">
+            <b class="item-close js-popup-close">x</b>
+        </div>
+        <div class="introMain">
+            <div class="togaysou">
+                <div class="introImg">
+                    <img src="assets/img/w13.jpg"width="90%" class="btn2">
+                </div>
+                <div class="tittle">
+                    <h1>決鬥大師</h1>
+                    <label>庫存：</label>
+                    <label>評價：</label>
+                    <label>已售出：</label><br>
+
+                    <p class="www">胡桃木 12¾英吋 龍的心弦 不易弯曲</p><br>
+                    <p class="www">價格:1800$</p>
+                    <form>
+                        <input type="button" class="numbut" value="-" id="btnOne" onclick="minusNUM">
+                        <input type="text" id="num" class="number" value="1">
+                        <input type="button" class="numbut" value="+" id="btnTwo" onclick="addNUM">
+                        <input type="submit" class="tocar" value="加入購物車">
+                    </form>
+                </div>
+            </div>
+            <div class="intro">
+                <h3>商品介紹</h3>
+                <div class="iOutline">
+                <span class="ios">这个魔杖比平常的尺寸要粗，由格里戈维奇制作。</span><br>
+                <p class="ios">  技術不精的魔杖製造師把胡桃木稱作是一種難以處理的木材，但這樣的舉動正顯露出了他們的無能。
+                    事實上，與胡桃木相配合需要特別的心靈手巧，而用它製作的魔杖並不適合讓那些過于謹慎、容易緊張的人使用，
+                    它們在那些猶猶豫豫的人的手中會變得非常危險。</p>
+                </div>
+            </div>
+            <div class="commentMain">
+                <div class="commentInport">
+                    <h2>Comment</h2>
+                    <form action="">
+                        <div class="name">
+                            <div class="text">Name :</div>
+                            <input id="name" type="text">
+                        </div>
+                        Rating :
+                        <div class="submit_rating" id="submit_stars" onmousemove="move(event,0)" onclick="move(event,1)">
+                          <div class="empty_star">&#x2660;&#x2660;&#x2660;&#x2660;&#x2660;</div>
+                          <div class="full_star" id="full_star">&#x2660;&#x2660;&#x2660;&#x2660;&#x2660;</div>
+                        </div>
+                        <div class="comment_title">Commemt :</div>
+                        <textarea id="comment" name placeholder></textarea>
+                        <input type="submit" value="送出" class="tocar"id="comsub">
+                    </form>
+                    </div>
+                    <div class="commentShow">
+                        <h2>更多留言</h2>
+                        <div class="">
+                            <span>哈利</span>
+                            <div class="empty_star" >&#x2660;&#x2660;&#x2660;&#x2660;&#x2660;</div>
+                            <div class="ccc">
+                                <p>第一根魔杖为伏地魔的兄弟魔杖，而這跟魔杖看起來更棒</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <span>妙麗</span>
+                            <div class="empty_star" >&#x2660;&#x2660;&#x2660;&#x2660;&#x2660;</div>
+                            <div class="ccc">
+                                <p>就喜歡這麼強而有力的魔杖</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h4"><h4>也許你還想看</h4></div>
+            <div class="list">
+                <div class="lattice"id="laLeft">
+                    <div class="likeImg">
+                        <a href=""><img src="assets/img/w10.jpg" width="90%"></a>
+                    </div>
+                    <div class="likeIntro">
+                        楓木魔杖
+                    </div>
+                </div>
+                <div class="lattice">
+                    <div class="likeImg">
+                        <a href=""><img src="assets/img/w14.jpg" width="90%"></a>
+                    </div>
+                    <div class="likeIntro">
+                        雷雨回環
+                    </div>
+                </div>
+                <div class="lattice"id="laRight">
+                    <div class="likeImg">
+                        <a href=""><img src="assets/img/w20.jpg" width="90%"></a>
+                    </div>
+                    <div class="likeIntro">
+                        黑胡桃木魔杖
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/footer.js"></script>
+    <script>
+        // 點擊圖片放大
+        (function ($) {
+          $(function () {
+            $('.btn2').on('click', function () {
+              $('#item1').popup({
+                time: 500,
+                classAnimateShow: 'slideInUp',
+                classAnimateHide: 'fadeOut',
+                onPopupClose: function e() {
+                  // console.log('0')
+                },
+                onPopupInit: function e() {
+                  // console.log('1')
+                }
+              });
+            });
+          });
+        })(jQuery);
+      </script>
+      <script src="assets/js/jquery.popup.min.js"></script>
+      </body>
+      
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-167622866-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        // 點擊圖片放大
+    </script>
+</body>
+</html>

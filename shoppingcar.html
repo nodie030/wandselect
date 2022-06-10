@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/shoppingcar.css">
+    <link rel="icon" href="assets/img/wand.png">
+    <title>奧利凡德</title>
+</head>
+<script>
+    var btn=document.getElementById("num");
+    function minusNUM(){
+        var btn=document.getElementById("num");
+        btn-=1;
+        // alert(btn.innerHTML);
+        btn.innerHTML=btn;
+    }
+    function addNUM(){
+        var btn=document.getElementById("num");
+        btn+=1;
+        // alert(btn.innerHTML);
+        btn.innerHTML=btn;
+    }
+</script>
+<body class="index_body">
+    <script src="assets/js/hearder.js"></script>
+    <div class="back"><input type ="button" onclick="history.back()" value="回到上一頁" ></input></div>
+    <section class="none">
+        <div class="block_left">
+            <div class="block">
+                <p class="title">購物車</p>
+                <p class="small">Your shopping bag</p>
+                <div class="order_back">
+                    <div class="order_img">
+                        <img src="assets/img/w2.jpg" width="170" class="img_detail">
+                    </div>
+                    <div class="order_text">
+                        <span class="smallword">靈魂使者</span><br>
+                        <span class="smallword">數量 : </span> <span class="smallword">1</span><br>
+                        <span class="smallword">總計 : </span> <span class="smallword">$1200</span><br>
+                        <form>
+                            <input type="button" class="numbut" value="-" id="btnOne" onclick="minusNUM">
+                            <input type="text" id="num" class="number" value="1">
+                            <input type="button" class="numbut" value="+" id="btnTwo" onclick="addNUM">
+                        </form>
+                    </div>
+                    <span class="delet">x</span>
+                </div>
+
+                <div class="order_back">
+                    <div class="order_img">
+                        <img src="assets/img/w7.jpg" width="170" class="img_detail">
+                    </div>
+                    <div class="order_text">
+                        <span class="smallword">吟夢旅人</span><br>
+                        <span class="smallword">數量 : </span> <span class="smallword">1</span><br>
+                        <span class="smallword">總計 : </span> <span class="smallword">$1200</span><br>
+                        <form>
+                            <input type="button" class="numbut" value="-" id="btnOne" onclick="minusNUM">
+                            <input type="text" id="num" class="number" value="1">
+                            <input type="button" class="numbut" value="+" id="btnTwo" onclick="addNUM">
+                        </form>
+                    </div>
+                    <span class="delet">x</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_right">
+            <div class="block">
+                <p class="title">付款方式</p>
+                <p class="small">Payment method</p>
+                  <form method="post" action="">
+                      <div class="select_block">
+                            <select size="1" name="place" class="select" id="place">
+                                <option value="">台灣及離島</option>
+                                <option value="">英國及歐洲地區</option>
+                                <option value="">美國地區</option>
+                                <option value="">霍格華茲</option>
+                            </select>
+                            <label class="active">配送區域</label>
+                   
+                      </div>
+
+                      <div class="radio_block">
+                          <div class="payment">
+                              <span>付款方式</span>
+                          </div>
+                                <div class="payword">
+                                   <input type="radio" name="pay" value="" id="pay" checked />貨到付款(超商)
+                                   <br>
+                                </div>    
+                                <div class="payword">
+                                    <input type="radio" name="pay" value="" id="pay"/>貨到付款(宅配)
+                                    <br>
+                                </div>
+                                <div class="payword">
+                                    <input type="radio" name="pay" value="" id="pay"/>信用卡線上刷卡
+                                    <br>
+                                </div>
+                                <div class="payword">
+                                    <input type="radio" name="pay" value="" id="pay"/>加隆
+                                </div>
+                      </div>
+
+                      <div class="select_block">
+                        <select size="1" name="get" class="select" id="get">
+                            <option value="">全家超商取貨</option>
+                            <option value="">711超商取貨</option>
+                            <option value="">宅配到府</option>
+                        </select>
+                        <label class="active">運送方式</label>
+                      </div>
+
+                      <div class="select_block">
+                        <input type="text" name="adress" placeholder="請輸入地址"  class="write" id="adress"/>
+                        <label class="active">填寫地址</label>
+                      </div>
+
+                      <div class="total">
+                          <span class="ordertitle">商品總數</span> <span class="ordervalue">0</span><br>
+                          <span class="ordertitle">商品總金額</span> <span class="ordervalue">0</span><br>
+                          <span class="ordertitle">運費</span> <span class="ordervalue">80</span><br>
+                          <span class="orderall">總金額</span> <span class="orderallvalue">NT.80</span><br> 
+                      </div>
+
+                      <input type="submit" name="" value="COTINUE →" class="button" />
+                  </form>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/footer.js"></script>
+</body>
+</html>

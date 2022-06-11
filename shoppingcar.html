@@ -9,20 +9,32 @@
     <title>奧利凡德</title>
 </head>
 <script>
-    var btn=document.getElementById("num");
-    function minusNUM(){
-        var btn=document.getElementById("num");
-        btn-=1;
-        // alert(btn.innerHTML);
-        btn.innerHTML=btn;
-    }
     function addNUM(){
-        var btn=document.getElementById("num");
-        btn+=1;
-        // alert(btn.innerHTML);
-        btn.innerHTML=btn;
+        //1、獲取#num的value
+        // var Stock = Number(document.getElementById("stock").value);
+        var value = Number(document.getElementById("num").value);
+        if(value >= 50){
+            value = 50;
+        }else{
+            value += 1;
+        }
+        document.getElementById("num").value = value;
     }
-</script>
+
+    function minusNUM(){
+        //1、獲取#num的值
+        var value = Number(document.getElementById("num").value);
+        //2、判斷#num的值是否小於等於1，如果小於等於1的話，則將值改為1
+        //3、否則，可以實現 - 1 操作
+        if(value <= 1){
+            value = 1;
+        }else{
+            value -= 1;
+        }
+        //4、將 value 的值賦值給 #num
+        document.getElementById("num").value = value;
+    }
+    </script>
 <body class="index_body">
     <script src="assets/js/hearder.js"></script>
     <div class="back"><input type ="button" onclick="history.back()" value="回到上一頁" ></input></div>

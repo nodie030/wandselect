@@ -249,6 +249,8 @@ h1{
 
 .commentShow{
     width: 390px;
+    height: 375px;
+    overflow-y: auto;
     background-color: #fff;
     margin-left: 1%;
     padding: 2%;

@@ -3,12 +3,14 @@ hearder='    <section>   <!--導覽列-->\
     <div class="logo nav"><a href="index.html">奧利凡德</a></div>\
     <div class="product nav"><a href="product.html" >商品介紹</a></div>\
     <div class="aboutus nav"><a href="aboutus.html" >關於我們</a></div>\
+    <div class="login nav"><a href="login.html" >登入註冊</a></div>\
+    <div class="bb nav"><a href="backstage.html" >後台</a></div>\
     <div class="search nav">\
     <form action="">\
         <input type="text" placeholder="Search" name="search" class="search1">\
     </form>\
 </div>\
-<div class="car nav"><a href="login.html"><img src="assets/img/member.png" width="23" class="member_img"></a></div>\
+<div class="car nav"><a href="member.html"><img src="assets/img/member.png" width="23" class="member_img"></a></div>\
 <div class="car nav" id="">\
     <a href="shoppingcar.html"><img src="assets/img/car (1).png" width="32" class="car_img"></a>\
 </div>\

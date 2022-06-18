@@ -36,7 +36,7 @@ nav>.logo{
 
 nav>.product,
 .aboutus,
-.login,bb {
+.login,.bb {
     font-size: 18px;
     font-weight: bold;
     text-align: center;

@@ -177,6 +177,11 @@ hr{
     display:flex;
 }
 
+.scro{
+    color: #fff;
+    font-size: 20px;
+}
+
 .pic{
     margin-right: 60px;
     border-radius: 5px;
@@ -192,6 +197,7 @@ hr{
 }
 
 .row_one{
+	display: flex;
     margin-left: 170px;
     margin-right: 30px;
 }
@@ -200,7 +206,7 @@ hr{
     width: 100px;
     height: auto;
     position: relative;
-    top: -50px;
+    top: -20px;
     margin: 0 auto;
     color: #E1DEDC;
     border: 2px solid #E1DEDC;
